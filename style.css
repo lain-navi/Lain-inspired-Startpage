@@ -1,0 +1,100 @@
+/* Importing fonts */
+@font-face {
+
+    font-family: lain;
+    src: url(lain_font.woff)
+}
+
+@font-face {
+    font-family: code;
+    src: url(JAi______1.woff)
+}
+
+html {
+    /* For the background to fill the footer */
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    /*Cover is fill, Contain is fit*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+/*  border: 1px solid transparent;*/
+/*  padding-bottom: 150px;*/    
+    color: white;
+    font-family: code;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+header {
+    font-family: lain;
+    text-shadow: 1px 1px 40px #FFFFFF;
+    color: white;
+    margin-top: 5.5em;
+    margin-bottom: 6em;
+}
+
+.A {
+    font-size: 4em;
+}
+
+.B {
+    font-size: 1.3em;
+    letter-spacing: 7px;
+    word-spacing: 7px;
+    background-color: black;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+h4 {
+    font-family: lain;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 40px #FFFFFF;
+}
+
+.container {
+    display: flex;
+    margin: 80px 20px;
+}
+
+ul {
+    flex: 1; /* all flex items are equivalent in terms of size flex-grow = 1 */
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 1px 1px 40px #000000;
+    margin: 30px;
+    padding: 30px;
+    min-width: 250px
+}
+
+li {
+
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 10px;
+    line-height: 1.5em;
+    margin: 10px 15px;
+}
+
+
+a {
+    display: block; /* Det links to display:block so that the whole container would become clickable */
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+a:link {}
+
+a:visited {}
+
+a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+a:active {}
