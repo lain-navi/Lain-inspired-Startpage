@@ -20,8 +20,8 @@ html {
 }
 
 body {
-/*  border: 1px solid transparent;*/
-/*  padding-bottom: 150px;*/    
+    /*  border: 1px solid transparent;*/
+    /*  padding-bottom: 150px;*/
     color: white;
     font-family: code;
     font-size: 1.7em;
@@ -33,7 +33,7 @@ header {
     text-shadow: 1px 1px 40px #FFFFFF;
     color: white;
     margin-top: 5.5em;
-    margin-bottom: 6em;
+    margin-bottom: 4em;
 }
 
 .A {
@@ -61,7 +61,8 @@ h4 {
 }
 
 ul {
-    flex: 1; /* all flex items are equivalent in terms of size flex-grow = 1 */
+    flex: 1;
+    /* all flex items are equivalent in terms of size flex-grow = 1 */
     list-style-type: none;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 15px;
@@ -81,7 +82,8 @@ li {
 
 
 a {
-    display: block; /* Det links to display:block so that the whole container would become clickable */
+    display: block;
+    /* Det links to display:block so that the whole container would become clickable */
     font-size: 20px;
     color: white;
     text-decoration: none;
@@ -98,3 +100,57 @@ a:hover {
 }
 
 a:active {}
+
+.bar{
+    display:flex;
+    justify-content: center;
+    
+}
+
+input[type="text"] {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 30px #000000;
+    display: block;
+    width: 600px;
+    height: 40px;
+    border:1px solid black;
+    border-radius: 40px;
+    color: white;
+    font-family: code;
+    font-size: 1.1em;
+    padding: 10px 30px;
+}
+
+input[type="text"]:focus {
+    border:1px white solid;
+    outline: none;
+    box-shadow: 0px 0px 30px #FFF;
+    background-color:rgba(255,255,255, 0.7);
+    color:black;
+
+}
+input[type="text"]:active {
+    
+    
+}
+input[type="submit"]{
+    cursor:pointer;
+    margin-left:50px;
+    box-shadow: 0px 0px 30px #000;
+    border-radius: 10px;
+    line-height: 1.5em;
+    font-size:20px;;
+    display:block;
+    padding:0px 30px;
+    color:white;
+    font-family:lain;
+    background-color:rgba(0,0,0, 0.8);
+    outline:none;
+    border:none;
+}
+input[type="submit"]:hover{
+    background-color:rgba(255,255,255, 0.7);
+    color:;
+    box-shadow: 0px 0px 30px #FFF;
+    color:black;
+}
